@@ -1,2 +1,41 @@
 # Pisano-Art
-Inspired from A New Way to Look at Fibonacci Numbers by Jacob Yatsko. Takes the modulo of each Fibonacci number and plot it on a circle, then connecting the points to form cool lines.
+Jacob Yatsko, a Youtuber created a video titled "A New Way to Look at Fibonacci Numbers." (link below)
+https://youtu.be/o1eLKODSCqw
+
+He took each Fibconacci number, divided it by an arbitary positive whole number, and made a list of the remainders (modulo). He then divided a circle into equal parts and created interesting shapes by connectioning points on a circle in a pattern determined by the remainders.
+
+I programmed this software to generate the shapes based on an input of a positive integer.
+
+****** This is programmed inn Java. **Requires a Java Runtime Environment (JRE) to run ****** Install JRE here if needed: https://www.java.com/en/download/manual.jsp
+****** Graphics of this program uses javax.swing, **IT ONLY WORKS ON A DESKTOP COMPUTER ****** (run the .jar file)
+
+-------------------------------------------------
+
+DETAILS
+
+**Fibonacci sequence:** A sequnce of numbers starting with 0, 1. Each successive number is the sum of the two previous numbers.
+    0 + 1 = 1; 1 + 1 = 2; 2 + 1 = 3; 3 + 2 = 5; 5 + 3 = 8; 8 + 5 = 13 ...
+    The first 11 terms of the sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55...
+ 
+ **Modulo** (%): The remainder when a number (dividend) is divivded by another (divisor).
+    10 % 5 = 0 | becuase 10/5 = 2 with no remainder
+    13 % 5 = 3 | because 13/5 = 2 with remainder of 3
+
+**Pisano sequence:** Take each Fibonacci number and divide it by an arbitary positive whole number, record the new sequence of modulo.
+    E.g. number (divisor) = 5
+    Fibonacci sequence = 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657
+    Pisano Sequence:     0, 1, 1, 2, 3, 0, 3,  3,  1,  4,  0,  4,  4,   3,   2,   0,   2,    2,    4,    1,   0,     1,     1,     2
+
+**Pisano Period:** The amount of numbers it takes for the Pisano Sequence to start repeating itself.
+  The Pisano Sequence starts to repeat at the 21st term. Therefore the Pisano period when the divisor = 5 is 21.
+
+**Art**
+1. Let n = the divisor
+      E.g. n = 5
+2. Divide the edge of the circle into n equal parts
+      E.g. Divide the edge of the circle into 5 equal parts
+3. Label the splitting points from 0 to n-1 going clockwise
+4. Each number in the Pisano Sequence (Fibconacci modulo n) corresponds to a splitting point.
+5. Draw a line segment from the point that represents the first number in the sequence to the point that represents the second number in the sequcne
+      E.g. Draw a segment from Point 0 to point 1, then from point 1 to itself (no drawing), thrn from point 1 to point 2...
+![image](https://user-images.githubusercontent.com/75919546/138032636-6dda8d3b-c280-407f-b9c4-423b7557c5db.png)
