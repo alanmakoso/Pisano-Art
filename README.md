@@ -6,8 +6,8 @@ He took each Fibconacci number, divided it by an arbitary positive whole number,
 
 I programmed this software to generate the shapes based on an input of a positive integer.
 
-****** This is programmed inn Java. **Requires a Java Runtime Environment (JRE) to run ****** Install JRE here if needed: https://www.java.com/en/download/manual.jsp
-****** Graphics of this program uses javax.swing, **IT ONLY WORKS ON A DESKTOP COMPUTER ****** (run the .jar file)
+****** This is programmed inn Java. **Requires a Java Runtime Environment (JRE) to run ** ****** Install JRE here if needed: https://www.java.com/en/download/manual.jsp
+****** Graphics of this program uses javax.swing, **IT ONLY WORKS ON A DESKTOP COMPUTER ** ****** (run the .jar file)
 
 -------------------------------------------------
 
